@@ -12,9 +12,17 @@ public class SumCalculatorTests {
     }
 
     @Test
-    public void testThatSumWorksCorrect() {
+    public void testSumCorrectCalc1() {
         Assertions.assertEquals(1, sumCalculator.sum(1));
+    }
+
+    @Test
+    public void testSumCorrectCalc3(){
         Assertions.assertEquals(6, sumCalculator.sum(3));
+    }
+
+    @Test
+    public void testSumCorrectCalc0(){
         Assertions.assertThrows(IllegalArgumentException.class, ()-> sumCalculator.sum(0));
     }
 
